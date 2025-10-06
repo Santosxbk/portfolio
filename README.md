@@ -93,7 +93,6 @@ Sou estudante de Análise de Dados e entusiasta em Cibersegurança, com interess
 
 - **GitHub**: [Santosxbk](https://github.com/Santosxbk)
 - **Portfólio Online**: [Em breve]
-- **Email**: santos@email.com
 
 ## 📄 Licença
 
@@ -111,7 +110,7 @@ Contribuições são sempre bem-vindas! Sinta-se à vontade para:
 
 ## 📞 Contato
 
-Santos - [@Santosxbk](https://github.com/Santosxbk) - santos@email.com
+Santos - [@Santosxbk](https://github.com/Santosxbk)
 
 Link do Projeto: [https://github.com/Santosxbk/portfolio](https://github.com/Santosxbk/portfolio)
 

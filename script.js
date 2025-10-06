@@ -482,7 +482,7 @@ console.log(`
 🚀 wired mode: on
 
 Conecte-se comigo:
-📧 santos@email.com
+
 🐙 github.com/Santosxbk
 `);
 
