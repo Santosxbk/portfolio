@@ -94,10 +94,6 @@ Sou estudante de Análise de Dados e entusiasta em Cibersegurança, com interess
 - **GitHub**: [Santosxbk](https://github.com/Santosxbk)
 - **Portfólio Online**: [Em breve]
 
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
 ## 🤝 Contribuições
 
 Contribuições são sempre bem-vindas! Sinta-se à vontade para:
