@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santos - Portfólio</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon personalizado com "S" -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%236366f1'/><text x='50' y='68' text-anchor='middle' font-family='Arial, sans-serif' font-size='60' font-weight='bold' fill='white'>S</text></svg>">
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -64,9 +68,18 @@
                         </div>
                         <div class="profile-card">
                             <div class="card-glow"></div>
-                            <div class="status-indicator">
-                                <span class="status-dot"></span>
-                                <span class="status-text">wired mode: on</span>
+                            <div class="terminal-container" id="terminalContainer">
+                                <div class="terminal-header">
+                                    <div class="terminal-button close" onclick="executeCommand('exit')"></div>
+                                    <div class="terminal-button minimize" onclick="minimizeTerminal()"></div>
+                                    <div class="terminal-button maximize" onclick="maximizeTerminal()"></div>
+                                    <div class="terminal-title">santos@portfolio:~</div>
+                                </div>
+                                <div class="terminal-body">
+                                    <div class="terminal-output" id="terminalOutput"></div>
+                                    <div class="scan-line"></div>
+                                </div>
+                                <div class="terminal-glitch" id="terminalGlitch"></div>
                             </div>
                         </div>
                     </div>
@@ -106,20 +119,52 @@
                 </div>
                 <div class="stats-grid">
                     <div class="stat-card">
-                        <div class="stat-number" data-target="9">0</div>
+                        <div class="stat-number" id="repos-count">0</div>
                         <div class="stat-label">Repositórios</div>
+                        <div class="stat-loading" id="repos-loading">
+                            <div class="loading-spinner"></div>
+                            <span>Carregando...</span>
+                        </div>
+                        <div class="stat-error" id="repos-error" style="display: none;">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Erro ao carregar</span>
+                        </div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number" data-target="56">0</div>
+                        <div class="stat-number" id="contributions-count">0</div>
                         <div class="stat-label">Contribuições</div>
+                        <div class="stat-loading" id="contributions-loading">
+                            <div class="loading-spinner"></div>
+                            <span>Carregando...</span>
+                        </div>
+                        <div class="stat-error" id="contributions-error" style="display: none;">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Erro ao carregar</span>
+                        </div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-number" id="stars-count">0</div>
                         <div class="stat-label">Stars Earned</div>
+                        <div class="stat-loading" id="stars-loading">
+                            <div class="loading-spinner"></div>
+                            <span>Carregando...</span>
+                        </div>
+                        <div class="stat-error" id="stars-error" style="display: none;">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Erro ao carregar</span>
+                        </div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number" data-target="48">0</div>
+                        <div class="stat-number" id="commits-count">0</div>
                         <div class="stat-label">Commits</div>
+                        <div class="stat-loading" id="commits-loading">
+                            <div class="loading-spinner"></div>
+                            <span>Carregando...</span>
+                        </div>
+                        <div class="stat-error" id="commits-error" style="display: none;">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Erro ao carregar</span>
+                        </div>
                     </div>
                 </div>
             </div>
