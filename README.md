@@ -2,6 +2,8 @@
 
 Bem-vindo ao meu portfólio pessoal! Este é um site moderno e responsivo que apresenta meus projetos, habilidades e experiências na área de análise de dados e cibersegurança.
 
+[#acesse aqui: ](https://santosxbk.github.io/portfolio/)
+
 ## 🚀 Sobre o Projeto
 
 Este portfólio foi desenvolvido com tecnologias web modernas, focando em:
